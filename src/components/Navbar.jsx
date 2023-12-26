@@ -2,11 +2,10 @@ import { useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { IconButton } from "@mui/material";
-import { useState } from "react";
 
-const Navbar = ({ roboto, spaceGrotesk }) => {
+const Navbar = ({ roboto, spaceGrotesk, isMenuOpen, setIsMenuOpen }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className="border-b-[1px] border-solid text-white border-gray-800 bg-black">
       {isNonMobileScreens ? (
