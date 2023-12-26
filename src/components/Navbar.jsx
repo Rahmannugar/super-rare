@@ -4,14 +4,14 @@ import CloseIcon from "@mui/icons-material/Close";
 import { IconButton } from "@mui/material";
 import { useState } from "react";
 
-const Navbar = ({ roboto, SpaceGrotesk }) => {
+const Navbar = ({ roboto, spaceGrotesk }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="border-b-1 border-solid text-white border-gray-800 bg-black">
+    <nav className="border-b-[1px] border-solid text-white border-gray-800 bg-black">
       {isNonMobileScreens ? (
         <div className="flex justify-between lg:px-[50px] xl:px-[70px] py-[29px]">
-          <div style={SpaceGrotesk} className="flex space-x-7 leading-6">
+          <div style={spaceGrotesk} className="flex space-x-7 leading-6">
             <h1 className="hover:text-purple-900 duration-200">Roadmap</h1>
             <h1 className="hover:text-purple-900 duration-200">Team</h1>
             <h1 className="hover:text-purple-900 duration-200">About</h1>
@@ -38,7 +38,7 @@ const Navbar = ({ roboto, SpaceGrotesk }) => {
           </div>
 
           <div>
-            <h1 style={SpaceGrotesk} className="font-bold text-2xl leading-9">
+            <h1 style={spaceGrotesk} className="font-bold text-2xl leading-9">
               SuperRare
             </h1>
           </div>
@@ -62,7 +62,7 @@ const Navbar = ({ roboto, SpaceGrotesk }) => {
         <div>
           <div className="flex justify-between  py-4 px-3 sm:px-10">
             <div>
-              <h1 style={SpaceGrotesk} className="font-bold text-xl leading-9">
+              <h1 style={spaceGrotesk} className="font-bold text-xl leading-9">
                 SuperRare
               </h1>
             </div>
