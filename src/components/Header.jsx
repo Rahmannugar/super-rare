@@ -126,7 +126,7 @@ const Header = ({ roboto, clashDisplay }) => {
             />
           </div>
           <div
-            className="grid grid-cols-2 md:grid-cols-3 mx-auto  max-w-[800px] justify-center items-center"
+            className="grid grid-cols-2 md:grid-cols-3 mx-auto  max-w-[800px] justify-center items-center x] p-10 bg-gradient-to-b from-zinc-600 to-zinc-800 rounded-[40px] border-2 border-green-500"
             style={nftStyle}
           >
             <img src={nft1} alt="nft-1" className=" mx-auto my-4 " />
