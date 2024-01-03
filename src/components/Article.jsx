@@ -259,7 +259,7 @@ const Article = ({ roboto, clashDisplay }) => {
               <img
                 src={Article3}
                 alt="article-3"
-                className=" md:w-[350px] md:h-[400px] object-cover"
+                className=" md:w-[350px] w-full h-[400px] md:h-[400px] object-cover"
               />
             </div>
           </div>
