@@ -11,13 +11,6 @@ import nft6 from "../assets/nft-6.png";
 const Header = ({ roboto, clashDisplay }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
 
-  const divStyle = {
-    borderRadius: "460px",
-    background:
-      "linear-gradient(180deg, rgba(36, 255, 0, 0.20) 0%, rgba(250, 0, 255, 0.20) 62.67%, rgba(112, 0, 255, 0.20) 113.33%)",
-    filter: "blur(100px)",
-  };
-
   const nftStyle = {
     borderRadius: "40px",
     borderBottom: "2px solid rgb(116, 145, 29)",
@@ -125,10 +118,7 @@ const Header = ({ roboto, clashDisplay }) => {
               className="w-[83.232px] h-[100px]"
             />
           </div>
-          <div
-            className="grid grid-cols-2 md:grid-cols-3 mx-auto  max-w-[800px] justify-center items-center x] p-10 bg-gradient-to-b from-zinc-600 to-zinc-800 rounded-[40px] border-2 border-green-500"
-            style={nftStyle}
-          >
+          <div className="grid grid-cols-2 md:grid-cols-3 mx-auto  max-w-[800px] justify-center items-center x] p-10 bg-gradient-to-b from-zinc-600 to-zinc-800 rounded-[40px] border-2 border-green-500">
             <img src={nft1} alt="nft-1" className=" mx-auto my-4 " />
             <img src={nft2} alt="nft-2" className=" mx-auto my-4 " />
             <img src={nft3} alt="nft-3" className=" mx-auto my-4 " />
