@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Partners from "./components/Partners";
+import Article from "./components/Article";
 const App = () => {
   const spaceGrotesk = {
     fontFamily: "'Space Grotesk', serif",
@@ -15,7 +16,7 @@ const App = () => {
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div>
+    <div className="bg-black">
       <Navbar
         roboto={roboto}
         spaceGrotesk={spaceGrotesk}
@@ -26,6 +27,7 @@ const App = () => {
         <div>
           <Header roboto={roboto} clashDisplay={clashDisplay} />
           <Partners roboto={roboto} />
+          <Article roboto={roboto} clashDisplay={clashDisplay} />
         </div>
       )}
     </div>
