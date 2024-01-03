@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Partners from "./components/Partners";
 const App = () => {
   const spaceGrotesk = {
     fontFamily: "'Space Grotesk', serif",
@@ -24,6 +25,7 @@ const App = () => {
       {!isMenuOpen && (
         <div>
           <Header roboto={roboto} clashDisplay={clashDisplay} />
+          <Partners roboto={roboto} />
         </div>
       )}
     </div>
