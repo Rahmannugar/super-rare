@@ -47,8 +47,8 @@ const Article = ({ roboto, clashDisplay }) => {
     background:
       "linear-gradient(269deg, rgba(98, 73, 255, 0.50) 30.86%, rgba(255, 116, 72, 0.39) 89.17%)",
     filter: "blur(200px)",
-    width: "300px",
-    height: "350px",
+    width: "500px",
+    height: "500px",
   };
   return (
     <div className="bg-black text-white">
@@ -155,7 +155,7 @@ const Article = ({ roboto, clashDisplay }) => {
               <img
                 src={Article3}
                 alt="article-3"
-                className="w-[550px] h-[640px] object-cover"
+                className="lg:w-[550px] xl:w-[620px] h-[640px] object-cover"
               />
             </div>
           </div>
@@ -241,32 +241,32 @@ const Article = ({ roboto, clashDisplay }) => {
               </div>
             </div>
 
-            <div className="flex justify-center items-center mt-20">
-              <div className="flex flex-col items-center lg:w-[550px] xl:w-[620px] justify-center space-y-10 bg-gradient-to-b from-zinc-600 to-neutral-900 h-[640px]">
+            <div className="md:flex justify-center items-center mt-16">
+              <div className="flex flex-col items-center md:w-[350px] justify-center space-y-10 px-10 bg-gradient-to-b from-zinc-600 to-neutral-900 h-[400px] md:h-[400px]">
                 <h1
                   style={clashDisplay}
-                  className="max-w-[520px] text-[40px] font-medium leading-[48px]"
+                  className="text-xl sm:text-2xl font-medium]"
                 >
                   Our environmental impact matters to us.
                 </h1>
-                <p style={roboto} className="max-w-[533px] leading-6">
+                <p style={roboto}>
                   In order to enable our community to spend as little as
                   possible in gas fees when minting, we opted for a contract
                   made by Azuki called ERC721A, which allows minting multiple
                   NFTs for essentially the same cost as minting a single one.
                 </p>
               </div>
-              {/* <img
+              <img
                 src={Article3}
                 alt="article-3"
-                className="w-[550px] h-[640px] object-cover"
-              /> */}
+                className=" md:w-[350px] md:h-[400px] object-cover"
+              />
             </div>
           </div>
 
           <div
             style={mobileBottomleftStyle}
-            className="mt-[-300px] left-0 bottom-0"
+            className=" hidden mt-[-300px] md:block"
           ></div>
         </div>
       )}
