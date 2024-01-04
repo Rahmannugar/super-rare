@@ -121,7 +121,7 @@ const Article = ({ roboto, clashDisplay }) => {
                   </h1>
                   <p
                     style={roboto}
-                    className="leading-6 max-w-[510px] pb-6 mx-auto"
+                    className="leading-6 max-w-[510px]  pb-6 mx-auto"
                   >
                     Even though no two Tinyfaces will ever be the same, some
                     variations are rarer than others. Watch out for special
@@ -137,11 +137,11 @@ const Article = ({ roboto, clashDisplay }) => {
               </div>
             </div>
 
-            <div className="flex justify-center items-center mt-20">
-              <div className="flex flex-col items-center lg:w-[550px] xl:w-[620px] justify-center space-y-10 bg-gradient-to-b from-zinc-600 to-neutral-900 h-[640px]">
+            <div className="flex justify-center mt-20">
+              <div className="flex flex-col lg:px-5 lg:w-[50%] 2xl:w-[604px] h-[640px] justify-center space-y-10 bg-gradient-to-b from-zinc-600 to-neutral-900">
                 <h1
                   style={clashDisplay}
-                  className="max-w-[520px] text-[40px] font-medium leading-[48px]"
+                  className="max-w-[520px] lg:text-3xl xl:text-[40px] font-medium leading-[48px]"
                 >
                   Our environmental impact matters to us.
                 </h1>
@@ -155,7 +155,7 @@ const Article = ({ roboto, clashDisplay }) => {
               <img
                 src={Article3}
                 alt="article-3"
-                className="lg:w-[550px] xl:w-[620px] h-[640px] object-cover"
+                className="lg:w-[50%] 2xl:w-[604px] h-[640px] object-cover"
               />
             </div>
           </div>
@@ -214,11 +214,11 @@ const Article = ({ roboto, clashDisplay }) => {
                 <img
                   src={Article1}
                   alt="article-1"
-                  className="w-[350px] h-[300px] mt-[50px] object-cover"
+                  className="w-[330px] h-[300px] mt-[50px] object-cover"
                 />
               </div>
 
-              <div className="w-[350px]  mt-12 sm:mt-0 bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
+              <div className="w-[330px]  mt-12 sm:mt-0 bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
                 <div className="text-center px-5">
                   <h1
                     style={clashDisplay}
@@ -236,13 +236,13 @@ const Article = ({ roboto, clashDisplay }) => {
                 <img
                   src={Article2}
                   alt="article-2"
-                  className="w-[350px] h-[300px] mt-[50px] object-cover"
+                  className="w-[330px] h-[300px] mt-[50px] object-cover"
                 />
               </div>
             </div>
 
             <div className="md:flex justify-center items-center mt-16">
-              <div className="flex flex-col items-center md:w-[350px] justify-center space-y-10 px-10 bg-gradient-to-b from-zinc-600 to-neutral-900 h-[400px] md:h-[400px]">
+              <div className="flex flex-col items-center md:w-[355px] justify-center space-y-10 px-10 bg-gradient-to-b from-zinc-600 to-neutral-900 h-[400px] md:h-[400px]">
                 <h1
                   style={clashDisplay}
                   className="text-xl sm:text-2xl font-medium]"
@@ -259,7 +259,7 @@ const Article = ({ roboto, clashDisplay }) => {
               <img
                 src={Article3}
                 alt="article-3"
-                className=" md:w-[350px] w-full h-[400px] md:h-[400px] object-cover"
+                className=" md:w-[355px] w-full h-[400px] md:h-[400px] object-cover"
               />
             </div>
           </div>
