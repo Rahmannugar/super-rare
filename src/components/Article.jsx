@@ -88,11 +88,11 @@ const Article = ({ roboto, clashDisplay }) => {
               style={topRightStyle}
             ></div>
             <div className="flex justify-between space-x-9 2xl:justify-center">
-              <div className="w-[604px] h-[736px] bg-gradient-to-b  from-transparent to-indigo-600  bg-orange-400 bg-opacity-20 border border-orange-400 border-opacity-60">
-                <div className="lg:px-5">
+              <div className="flex flex-col w-[604px] h-[736px] bg-gradient-to-b  from-transparent to-indigo-600  bg-orange-400 bg-opacity-20 border border-orange-400 border-opacity-60">
+                <div className="">
                   <h1
                     style={clashDisplay}
-                    className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto py-16"
+                    className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto"
                   >
                     Thousands of unique NFTs
                   </h1>
@@ -107,22 +107,19 @@ const Article = ({ roboto, clashDisplay }) => {
                 <img
                   src={Article1}
                   alt="article-1"
-                  className="w-[604px] h-[418px] mt-[80px] object-cover"
+                  className="w-[604px] h-[418px] m object-cover"
                 />
               </div>
 
-              <div className="w-[604px] h-[736px] bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
-                <div className="lg:px-5">
+              <div className="flex flex-col w-[604px] h-[736px] bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
+                <div className="">
                   <h1
                     style={clashDisplay}
-                    className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto py-16"
+                    className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto"
                   >
                     Secure the most rare
                   </h1>
-                  <p
-                    style={roboto}
-                    className="leading-6 max-w-[510px]  pb-6 mx-auto"
-                  >
+                  <p style={roboto} className="leading-6 max-w-[510px] mx-auto">
                     Even though no two Tinyfaces will ever be the same, some
                     variations are rarer than others. Watch out for special
                     accessories and raw materials - the rarer the attributes,
@@ -132,7 +129,7 @@ const Article = ({ roboto, clashDisplay }) => {
                 <img
                   src={Article2}
                   alt="article-2"
-                  className="w-[604px] h-[418px] mt-[80px] object-cover"
+                  className="w-[604px] h-[418px] -[15%] object-cover"
                 />
               </div>
             </div>
