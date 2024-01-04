@@ -30,7 +30,6 @@ const Favorite = ({ clashDisplay }) => {
             >
               Find your favourite character
             </h1>
-
             <div className="flex justify-end ">
               <IconButton>
                 <div className="border border-white rounded-[50px] flex justify-center items-center h-[48px] w-[48px]">
@@ -66,6 +65,22 @@ const Favorite = ({ clashDisplay }) => {
                 </div>
               </IconButton>
             </div>
+            <div className="flex">
+              <div className="bg-[#F4DACC] h-[ 422.813px] w-[390px]">
+                <img src={Character1} alt="character-1" />
+              </div>
+              <div className="bg-[#C4EEE1] h-[ 422.813px] w-[390px]">
+                <img src={Character2} alt="character-2" />
+              </div>
+              <div className="bg-[#D9BEF2] h-[ 422.813px] w-[390px]">
+                <img src={Character3} alt="character-3" />
+              </div>
+              <div className="bg-[#F4F3CA] h-[ 422.813px] w-[390px]">
+                <img src={Character4} alt="character-4" />
+              </div>
+            </div>
+
+            <div></div>
           </div>
         </div>
       ) : (
