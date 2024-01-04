@@ -89,10 +89,10 @@ const Article = ({ roboto, clashDisplay }) => {
             ></div>
             <div className="flex justify-between space-x-9 2xl:justify-center">
               <div className="flex flex-col w-[604px] h-[736px] bg-gradient-to-b  from-transparent to-indigo-600  bg-orange-400 bg-opacity-20 border border-orange-400 border-opacity-60">
-                <div className="">
+                <div className="lg:px-5">
                   <h1
                     style={clashDisplay}
-                    className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto"
+                    className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto py-16"
                   >
                     Thousands of unique NFTs
                   </h1>
@@ -107,15 +107,15 @@ const Article = ({ roboto, clashDisplay }) => {
                 <img
                   src={Article1}
                   alt="article-1"
-                  className="w-[604px] h-[418px] m object-cover"
+                  className="w-[604px] h-[418px] mt-[56.5px] object-cover"
                 />
               </div>
 
               <div className="flex flex-col w-[604px] h-[736px] bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
-                <div className="">
+                <div className="lg:px-5">
                   <h1
                     style={clashDisplay}
-                    className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto"
+                    className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto py-16"
                   >
                     Secure the most rare
                   </h1>
@@ -129,13 +129,13 @@ const Article = ({ roboto, clashDisplay }) => {
                 <img
                   src={Article2}
                   alt="article-2"
-                  className="w-[604px] h-[418px] -[15%] object-cover"
+                  className="w-[604px] h-[418px] mt-[80.5px] object-cover"
                 />
               </div>
             </div>
 
             <div className="flex justify-center mt-20">
-              <div className="flex flex-col lg:px-5 lg:w-[50%] 2xl:w-[604px] h-[640px] justify-center space-y-10 bg-gradient-to-b from-zinc-600 to-neutral-900">
+              <div className="flex flex-col lg:px-5 xl:px-10 lg:w-[50%] 2xl:w-[620px] h-[640px] justify-center space-y-10 bg-gradient-to-b from-zinc-600 to-neutral-900">
                 <h1
                   style={clashDisplay}
                   className="max-w-[520px] lg:text-3xl xl:text-[40px] font-medium leading-[48px]"
@@ -152,7 +152,7 @@ const Article = ({ roboto, clashDisplay }) => {
               <img
                 src={Article3}
                 alt="article-3"
-                className="lg:w-[50%] 2xl:w-[604px] h-[640px] object-cover"
+                className="lg:w-[50%] 2xl:w-[620px] h-[640px] object-cover"
               />
             </div>
           </div>
