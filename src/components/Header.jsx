@@ -13,8 +13,11 @@ const Header = ({ roboto, clashDisplay }) => {
 
   const nftStyle = {
     borderRadius: "40px",
+
+    borderTop: "2px solid green",
     borderBottom: "2px solid rgb(116, 145, 29)",
-    border: "2px solid green",
+    borderLeft: "2px solid rgb(116, 145, 29)",
+    borderRight: "2px solid rgb(116, 145, 29)",
     background:
       "linear-gradient(180deg, #5C5C5C 0%, rgba(46, 46, 46, 0.13) 100%)",
     padding: "40px",
@@ -118,7 +121,10 @@ const Header = ({ roboto, clashDisplay }) => {
               className="w-[83.232px] h-[100px]"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 mx-auto  max-w-[800px] justify-center items-center x] p-10 bg-gradient-to-b from-zinc-600 to-zinc-800 rounded-[40px] border-2 border-green-500">
+          <div
+            style={nftStyle}
+            className="grid grid-cols-2 md:grid-cols-3 mx-auto  max-w-[800px] justify-center items-center"
+          >
             <img src={nft1} alt="nft-1" className=" mx-auto my-4 " />
             <img src={nft2} alt="nft-2" className=" mx-auto my-4 " />
             <img src={nft3} alt="nft-3" className=" mx-auto my-4 " />

@@ -195,7 +195,7 @@ const Article = ({ roboto, clashDisplay }) => {
               style={mobileTopRightStyle}
             ></div>
             <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-3 md:space-x-10">
-              <div className="w-[320px] bg-gradient-to-b  from-transparent to-indigo-600  bg-orange-400 bg-opacity-20 border border-orange-400 border-opacity-60">
+              <div className="w-[330px] bg-gradient-to-b  from-transparent to-indigo-600  bg-orange-400 bg-opacity-20 border border-orange-400 border-opacity-60">
                 <div className="text-center px-5">
                   <h1
                     style={clashDisplay}
@@ -214,11 +214,11 @@ const Article = ({ roboto, clashDisplay }) => {
                 <img
                   src={Article1}
                   alt="article-1"
-                  className="w-[320px] h-[300px] mt-[50px] object-cover"
+                  className="w-[350px] h-[300px] mt-[50px] object-cover"
                 />
               </div>
 
-              <div className="w-[320px]  mt-12 sm:mt-0 bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
+              <div className="w-[350px]  mt-12 sm:mt-0 bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
                 <div className="text-center px-5">
                   <h1
                     style={clashDisplay}
@@ -236,7 +236,7 @@ const Article = ({ roboto, clashDisplay }) => {
                 <img
                   src={Article2}
                   alt="article-2"
-                  className="w-[320px] h-[300px] mt-[50px] object-cover"
+                  className="w-[350px] h-[300px] mt-[50px] object-cover"
                 />
               </div>
             </div>
