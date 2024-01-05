@@ -65,38 +65,53 @@ const Favorite = ({ clashDisplay }) => {
                 </div>
               </IconButton>
             </div>
-            <div className="flex mt-10">
-              <div className="bg-[#F4DACC] h-[422.813px] w-[390px]">
+            <div className="  mt-10">
+              <div className="bg-[#F4DACC] h-[422.813px]  w-[390px] flex items-end justify-center">
                 <img
                   src={Character1}
                   alt="character-1"
-                  className="h-[340px] w-[340px] object-contain"
+                  className="w-[340px] h-[340px]"
                 />
               </div>
-              <div className="bg-[#C4EEE1] h-[422.813px] w-[390px]">
+              <div className="bg-[#C4EEE1] h-[422.813px] w-[390px] flex items-end justify-center">
                 <img
                   src={Character2}
                   alt="character-2"
-                  className="h-[340px] w-[340px] object-contain"
+                  className="w-[340px] h-[340px]"
                 />
               </div>
-              <div className="bg-[#D9BEF2] h-[422.813px] w-[390px]">
+              <div className="bg-[#D9BEF2] h-[422.813px] w-[390px] flex items-end justify-center">
                 <img
                   src={Character3}
                   alt="character-3"
-                  className="h-[340px] w-[340px] object-contain"
+                  className="w-[340px] h-[340px]"
                 />
               </div>
-              <div className="bg-[#F4F3CA] h-[422.813px] w-[390px]">
+              <div className="bg-[#F4F3CA] h-[422.813px] w-[390px] flex items-end justify-center">
                 <img
                   src={Character4}
                   alt="character-4"
-                  className="h-[340px] w-[340px] object-contain"
+                  className="w-[340px] h-[340px]"
                 />
               </div>
             </div>
 
-            <div></div>
+            <div className="mt-28">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="88"
+                height="8"
+                viewBox="0 0 88 8"
+                fill="none"
+              >
+                <circle cx="4" cy="4" r="4" fill="white" />
+                <circle cx="20" cy="4" r="4" fill="#8D8D8D" />
+                <circle cx="36" cy="4" r="4" fill="#8D8D8D" />
+                <circle cx="52" cy="4" r="4" fill="#8D8D8D" />
+                <circle cx="68" cy="4" r="4" fill="#8D8D8D" />
+                <circle cx="84" cy="4" r="4" fill="#8D8D8D" />
+              </svg>
+            </div>
           </div>
         </div>
       ) : (
