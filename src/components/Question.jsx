@@ -1,4 +1,5 @@
 import { useMediaQuery } from "@mui/material";
+import Question from "../assets/question.png";
 
 const Question = ({ clashDisplay, roboto }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
@@ -144,8 +145,9 @@ const Question = ({ clashDisplay, roboto }) => {
                 </svg>
               </div>
             </div>
-            
           </div>
+
+          <img src={Question} alt="question-image" />
         </div>
       ) : (
         <div></div>
