@@ -25,6 +25,21 @@ const Favorite = ({ clashDisplay }) => {
     setOverFlow("overflow-x-visible");
   };
 
+  const handleMobileLeft = () => {
+    setCurrentPosition((prevPosition) => Math.max(prevPosition - 1, 0));
+    if (currentPosition === 1) {
+      setOverFlow("overflow-x-hidden");
+    }
+  };
+
+  const handleMobileRight = () => {
+    const totalImages = 4;
+    setCurrentPosition((prevPosition) =>
+      Math.min(prevPosition + 1, totalImages - 1)
+    );
+    setOverFlow("overflow-x-visible");
+  };
+
   const topDivStyle = {
     borderRadius: "690px",
     opacity: "0.5",
@@ -95,7 +110,7 @@ const Favorite = ({ clashDisplay }) => {
             <div
               className={`${overFlow} flex lg:space-x-5 xl:space-x-10 mt-10 transition-transform duration-500 ease-in-out`}
               style={{
-                transform: `translateX(-${currentPosition * 100}%)`,
+                transform: `translateX(-${currentPosition * 50}%)`,
               }}
             >
               <div className="flex-shrink-0 bg-[#F4DACC] h-[422.813px] w-[390px] flex items-end justify-center">
@@ -160,7 +175,7 @@ const Favorite = ({ clashDisplay }) => {
               Find your favourite character
             </h1>
             <div className="flex mt-3 justify-end ">
-              <IconButton onClick={handleLeft}>
+              <IconButton onClick={handleMobileLeft}>
                 <div className="border border-white rounded-full flex justify-center items-center h-[30px] w-[30px]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +192,7 @@ const Favorite = ({ clashDisplay }) => {
                 </div>
               </IconButton>
 
-              <IconButton onClick={handleRight}>
+              <IconButton onClick={handleMobileRight}>
                 <div className="border border-white rounded-full flex justify-center items-center h-[30px] w-[30px]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -196,37 +211,37 @@ const Favorite = ({ clashDisplay }) => {
             </div>
 
             <div
-              className={`${overFlow} flex space-x-4 mt-10 transition-transform duration-500 ease-in-out`}
+              className={` flex space-x-4 mt-10 transition-transform duration-500 ease-in-out`}
               style={{
-                transform: `translateX(-${currentPosition * 100}%)`,
+                transform: `translateX(-${currentPosition * 50}%)`,
               }}
             >
               <div className="flex-shrink-0 bg-[#F4DACC] h-[250px] w-[200px] flex items-end justify-center">
                 <img
                   src={Character1}
                   alt="character-1"
-                  className="w-[180px] h-[180px]"
+                  className="max-w-full max-h-full"
                 />
               </div>
               <div className="flex-shrink-0 bg-[#C4EEE1] h-[250px] w-[200px] flex items-end justify-center">
                 <img
                   src={Character2}
                   alt="character-2"
-                  className="w-[180px] h-[180px]"
+                  className="max-w-full max-h-full"
                 />
               </div>
               <div className="flex-shrink-0 bg-[#D9BEF2] h-[250px] w-[200px] flex items-end justify-center">
                 <img
                   src={Character3}
                   alt="character-3"
-                  className="w-[180px] h-[180px]"
+                  className="max-w-full max-h-full"
                 />
               </div>
               <div className="flex-shrink-0 bg-[#F4F3CA] h-[250px] w-[200px] flex items-end justify-center">
                 <img
                   src={Character4}
                   alt="character-4"
-                  className="w-[180px] h-[180px]"
+                  className="max-w-full max-h-full"
                 />
               </div>
             </div>
