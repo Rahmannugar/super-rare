@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Partners from "./components/Partners";
 import Article from "./components/Article";
 import Favorite from "./components/Favorite";
+import Question from "./components/Question";
 const App = () => {
   const spaceGrotesk = {
     fontFamily: "'Space Grotesk', serif",
@@ -30,6 +31,7 @@ const App = () => {
           <Partners roboto={roboto} />
           <Article roboto={roboto} clashDisplay={clashDisplay} />
           <Favorite clashDisplay={clashDisplay} />
+          <Question roboto={roboto} clashDisplay={clashDisplay} />
         </div>
       )}
     </div>
