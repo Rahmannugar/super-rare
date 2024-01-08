@@ -37,7 +37,7 @@ const Favorite = ({ clashDisplay }) => {
     setCurrentPosition((prevPosition) =>
       Math.min(prevPosition + 1, totalImages - 1)
     );
-    setOverFlow("overflow-x-visible");
+    setOverFlow("overflow-x-auto");
   };
 
   const topDivStyle = {
@@ -211,7 +211,7 @@ const Favorite = ({ clashDisplay }) => {
             </div>
 
             <div
-              className={` flex space-x-4 mt-10 transition-transform duration-500 ease-in-out`}
+              className={`${overFlow} flex space-x-4 mt-10 transition-transform duration-500 ease-in-out`}
               style={{
                 transform: `translateX(-${currentPosition * 50}%)`,
               }}
