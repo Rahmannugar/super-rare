@@ -37,7 +37,7 @@ const Favorite = ({ clashDisplay }) => {
     setCurrentPosition((prevPosition) =>
       Math.min(prevPosition + 1, totalImages - 1)
     );
-    setOverFlow("overflow-x-auto");
+    setOverFlow("overflow-x-visible");
   };
 
   const topDivStyle = {
@@ -62,7 +62,7 @@ const Favorite = ({ clashDisplay }) => {
   return (
     <div className="text-white bg-[#18181D]">
       {isNonMobileScreens ? (
-        <div className="py-24 mt-48 lg:px-[50px] xl:px-[70px] 2xl:[px-100px] ">
+        <div className="py-24 mt-48 lg:px-[50px] xl:px-[70px] 2xl:[px-100px] overflow-hidden">
           <div className="relative">
             <div style={topDivStyle} className="absolute top-0 left-0"></div>
             <h1
@@ -162,7 +162,7 @@ const Favorite = ({ clashDisplay }) => {
           </div>
         </div>
       ) : (
-        <div className="py-16 mt-24 px-10">
+        <div className="py-16 mt-24 px-10 overflow-hidden">
           <div className="relative">
             <div
               style={mobileTopDivStyle}
