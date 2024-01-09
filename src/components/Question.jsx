@@ -1,8 +1,16 @@
 import { useMediaQuery } from "@mui/material";
 import QuestionImage from "../assets/question.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Question = ({ clashDisplay, roboto }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const questionStyle = {
     background:
       "linear-gradient(260deg, #0D0F15 -4.53%, rgba(37, 16, 29, 0.00) 105.52%)",
@@ -190,6 +198,8 @@ const Question = ({ clashDisplay, roboto }) => {
             <div className="space-y-3 flex flex-col justify-center items-center pt-10">
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-right"
+                data-aos-duration="900"
                 className="h-[72px] w-[350px] sm:w-[500px] flex justify-between items-center"
               >
                 <h2
@@ -215,6 +225,8 @@ const Question = ({ clashDisplay, roboto }) => {
 
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-left"
+                data-aos-duration="900"
                 className="h-[72px] w-[350px] sm:w-[500px] flex justify-between items-center"
               >
                 <h2
@@ -240,6 +252,8 @@ const Question = ({ clashDisplay, roboto }) => {
 
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-right"
+                data-aos-duration="900"
                 className="h-[72px] w-[350px] sm:w-[500px] flex justify-between items-center"
               >
                 <h2
@@ -265,6 +279,8 @@ const Question = ({ clashDisplay, roboto }) => {
 
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-left"
+                data-aos-duration="900"
                 className="h-[72px] w-[350px] sm:w-[500px] flex justify-between items-center"
               >
                 <h2
@@ -290,6 +306,8 @@ const Question = ({ clashDisplay, roboto }) => {
 
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-right"
+                data-aos-duration="900"
                 className="h-[72px] w-[350px] sm:w-[500px] flex justify-between items-center"
               >
                 <h2
@@ -318,6 +336,8 @@ const Question = ({ clashDisplay, roboto }) => {
             src={QuestionImage}
             alt="question-image"
             className="h-[371px] mt-[-30px]  w-[371px]   object-contain"
+            data-aos="fade-left"
+            data-aos-duration="700"
           />
         </div>
       )}

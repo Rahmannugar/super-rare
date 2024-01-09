@@ -3,9 +3,17 @@ import Spline3 from "../assets/spline-3.png";
 import Article1 from "../assets/article-1.png";
 import Article2 from "../assets/article-2.png";
 import Article3 from "../assets/article-3.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Article = ({ roboto, clashDisplay }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const divStyle = {
     background:
       "linear-gradient(180deg, #141415 -1.57%, rgba(30, 30, 30, 0.00) 118.49%)",
@@ -185,6 +193,7 @@ const Article = ({ roboto, clashDisplay }) => {
                 src={Spline3}
                 alt="spline-3"
                 className="object-cover w-[100px]  h-[120px]"
+                data-aos="fade-left"
               />
             </div>
             <div
@@ -193,7 +202,7 @@ const Article = ({ roboto, clashDisplay }) => {
             ></div>
             <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-3 md:space-x-10">
               <div className="w-[330px] bg-gradient-to-b  from-transparent to-indigo-600  bg-orange-400 bg-opacity-20 border border-orange-400 border-opacity-60">
-                <div className="text-center px-5">
+                <div className="text-center px-5" data-aos="zoom-in">
                   <h1
                     style={clashDisplay}
                     className="text-xl sm:text-2xl font-medium  py-10"
@@ -212,11 +221,12 @@ const Article = ({ roboto, clashDisplay }) => {
                   src={Article1}
                   alt="article-1"
                   className="w-[330px] h-[300px] mt-[50px] object-cover"
+                  data-aos="zoom-in"
                 />
               </div>
 
               <div className="w-[330px]  mt-12 sm:mt-0 bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
-                <div className="text-center px-5">
+                <div className="text-center px-5" data-aos="zoom-in">
                   <h1
                     style={clashDisplay}
                     className="text-xl sm:text-2xl font-medium py-10"
@@ -234,6 +244,7 @@ const Article = ({ roboto, clashDisplay }) => {
                   src={Article2}
                   alt="article-2"
                   className="w-[330px] h-[300px] mt-[50px] object-cover"
+                  data-aos="zoom-in"
                 />
               </div>
             </div>

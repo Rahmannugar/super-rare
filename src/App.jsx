@@ -28,7 +28,7 @@ const App = () => {
         setIsMenuOpen={setIsMenuOpen}
       />
       {!isMenuOpen && (
-        <div>
+        <div className="overflow-hidden">
           <Suspense
             fallback={<div className="bg-black text-black">Loading...</div>}
           >

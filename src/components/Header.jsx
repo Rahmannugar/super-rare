@@ -7,9 +7,16 @@ import nft3 from "../assets/nft-3.png";
 import nft4 from "../assets/nft-4.png";
 import nft5 from "../assets/nft-5.png";
 import nft6 from "../assets/nft-6.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Header = ({ roboto, clashDisplay }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const nftStyle = {
     borderRadius: "40px",
@@ -96,7 +103,7 @@ const Header = ({ roboto, clashDisplay }) => {
           </div>
         </div>
       ) : (
-        <div className=" bg-black relative px-10 text-white text-center pt-24 pb-10">
+        <div className=" bg-black px-10 text-white text-center pt-24 pb-10">
           <div className="w-[250px] absolute h-[300px] bg-gradient-to-b from-green-500 via-fuchsia-500 to-violet-700 rounded-full blur-3xl opacity-50" />
           <h1
             className="text-3xl font-semibold max-w-[700px] mx-auto"
@@ -113,24 +120,72 @@ const Header = ({ roboto, clashDisplay }) => {
               src={Spline2}
               alt="spline-2"
               className="w-[83.014px] h-[100px]"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="500"
             />
 
             <img
               src={Spline1}
               alt="spline-1"
               className="w-[83.232px] h-[100px]"
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-duration="500"
             />
           </div>
           <div
             style={nftStyle}
             className="grid grid-cols-2 md:grid-cols-3 mx-auto  max-w-[800px] justify-center items-center"
           >
-            <img src={nft1} alt="nft-1" className=" mx-auto my-4 " />
-            <img src={nft2} alt="nft-2" className=" mx-auto my-4 " />
-            <img src={nft3} alt="nft-3" className=" mx-auto my-4 " />
-            <img src={nft4} alt="nft-4" className=" mx-auto my-4 " />
-            <img src={nft5} alt="nft-5" className=" mx-auto my-4 " />
-            <img src={nft6} alt="nft-6" className=" mx-auto my-4 " />
+            <img
+              src={nft1}
+              alt="nft-1"
+              className=" mx-auto my-4"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
+            <img
+              src={nft2}
+              alt="nft-2"
+              className="mx-auto my-4"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
+            <img
+              src={nft3}
+              alt="nft-3"
+              className="mx-auto my-4"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
+            <img
+              src={nft4}
+              alt="nft-4"
+              className="mx-auto my-4"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
+            <img
+              src={nft5}
+              alt="nft-5"
+              className="mx-auto my-4"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
+            <img
+              src={nft6}
+              alt="nft-6"
+              className="mx-auto my-4"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
           </div>
           <div className="w-[400px] h-[300px]  absolute right-0 opacity-80 bg-gradient-to-l from-indigo-700 to-fuchsia-600 rounded-full blur-[400px]" />
         </div>

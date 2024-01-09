@@ -2,9 +2,17 @@ import { useMediaQuery } from "@mui/material";
 import Footer1 from "../assets/footer-1.png";
 import Footer2 from "../assets/footer-2.png";
 import Footer3 from "../assets/footer-3.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const date = new Date();
   const year = date.getFullYear();
 
@@ -225,12 +233,14 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
             <div className="flex space-x-6 items-center justify-center py-6">
               <button
                 style={roboto}
+                data-aos="fade-down"
                 className="px-[20px] py-[10px] flex-shrink-0 bg-white text-black rounded-[100px] hover:bg-green-300 duration-300"
               >
                 Join Discord
               </button>
               <button
                 style={roboto}
+                data-aos="fade-up"
                 className="px-[20px] py-[10px] rounded-[100px] flex-shrink-0 text-white border hover:border-none hover:bg-white hover:text-black duration-300"
               >
                 Follow on Twitter
@@ -241,16 +251,22 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
               <img
                 src={Footer1}
                 alt="footer-1"
+                data-aos="fade-down"
+                data-aos-duration="900"
                 className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] flex-shrink-0"
               />
               <img
                 src={Footer2}
                 alt="footer-2"
+                data-aos="fade-up"
+                data-aos-duration="900"
                 className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] flex-shrink-0 mt-[-50px]"
               />
               <img
                 src={Footer3}
                 alt="footer-3"
+                data-aos="fade-down"
+                data-aos-duration="900"
                 className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] flex-shrink-0"
               />
             </div>
