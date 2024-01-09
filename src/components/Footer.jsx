@@ -5,11 +5,54 @@ import Footer3 from "../assets/footer-3.png";
 
 const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
+  const date = new Date();
+  const year = date.getFullYear();
+
+  const bottomLeftStyle = {
+    borderRadius: "518px",
+    opacity: "0.5",
+    background:
+      "linear-gradient(269deg, rgba(98, 73, 255, 0.50) 30.86%, rgba(36, 255, 0, 0.50) 89.17%)",
+    filter: "blur(200px)",
+    width: "518px",
+    height: "426px",
+  };
+
+  const topRightStyle = {
+    borderRadius: "690px",
+    opacity: "0.5",
+    background:
+      "linear-gradient(268deg, rgba(36, 255, 0, 0.31) 25.54%, rgba(10, 207, 131, 0.50) 43.2%, rgba(89, 75, 242, 0.50) 74.96%)",
+    filter: "blur(200px)",
+    width: "690px",
+    height: "568px",
+    transform: "rotate(-34.572deg)",
+  };
+
+  const bottomRightStyle = {
+    borderRadius: "604px",
+    opacity: "0.5",
+    background:
+      "linear-gradient(0deg, rgba(255, 245, 0, 0.50) 0%, rgba(255, 245, 0, 0.50) 100%)",
+    filter: "blur(200px)",
+    width: "604px",
+    height: "497px",
+  };
   return (
     <div>
       {isNonMobileScreens ? (
         <div>
-          <div className="bg-[#131415] lg:px-[50px] xl:px-[70px] 2xl:[px-100px] py-32">
+          <div className="bg-[#131415] relative lg:px-[50px] xl:px-[70px] 2xl:[px-100px] py-32">
+            <div
+              style={bottomLeftStyle}
+              className="absolute bottom-0 left-0"
+            ></div>
+            <div style={topRightStyle} className="absolute top-0 right-0"></div>
+            <div
+              style={bottomRightStyle}
+              className="absolute bottom-0 right-0"
+            ></div>
+
             <div className="text-white space-y-5">
               <h1
                 className="font-semibold text-5xl leading-[57.6px]"
@@ -29,13 +72,13 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
             <div className="flex space-x-6 py-20">
               <button
                 style={roboto}
-                className="px-[28px] py-[12px] bg-white text-black rounded-[100px]"
+                className="px-[28px] py-[12px] bg-white text-black rounded-[100px] hover:bg-green-300 duration-300"
               >
                 Join Discord
               </button>
               <button
                 style={roboto}
-                className="px-[24px] py-[12px] rounded-[100px] text-white border"
+                className="px-[24px] py-[12px] rounded-[100px] text-white border hover:border-none hover:bg-white hover:text-black duration-300"
               >
                 Follow on Twitter
               </button>
@@ -60,7 +103,7 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
             </div>
           </div>
 
-          <div className="bg-[#111] lg:pt-48 xl:pt-72">
+          <div className="bg-[#111] lg:pt-48 xl:pt-72 lg:px-[50px] xl:px-[70px] 2xl:[px-100px] pb-28">
             <div>
               <h1
                 className="leading-9 text-2xl font-bold text-white text-center"
@@ -68,12 +111,55 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
               >
                 SuperRare
               </h1>
-              <div>
-                <h2>Roadmap</h2>
-                <h2>Team</h2>
-                <h2>About</h2>
-                <h2>Wallet</h2>
-                <h2>Buy</h2>
+              <div
+                className="flex justify-center items-center space-x-10 mt-8"
+                style={{
+                  color: "rgba(255, 255, 255, 0.5)",
+                }}
+              >
+                <h2 className="font-semibold leading-6" style={roboto}>
+                  Roadmap
+                </h2>
+                <h2 className="font-semibold leading-6" style={roboto}>
+                  Team
+                </h2>
+                <h2 className="font-semibold leading-6" style={roboto}>
+                  About
+                </h2>
+                <h2 className="font-semibold leading-6" style={roboto}>
+                  Wallet
+                </h2>
+                <h2 className="font-semibold leading-6" style={roboto}>
+                  Buy
+                </h2>
+              </div>
+
+              <div
+                style={{
+                  background: "rgba(171, 171, 171, 0.50)",
+                }}
+                className="h-[1px] mt-16"
+              ></div>
+
+              <div
+                style={roboto}
+                className="text-[#ABABAB] mt-9 flex justify-between"
+              >
+                <h1 className="leading-[21px]">
+                  {year} Superare. All right reserved.
+                </h1>
+
+                <div className="flex space-x-4">
+                  <a href="/" className="underline leading-[21px]">
+                    Privacy Policy
+                  </a>
+                  <a href="/" className="underline leading-[21px]">
+                    Terms of Service
+                  </a>
+                  <a href="/" className="underline leading-[21px]">
+                    Cookies Settings
+                  </a>
+                </div>
               </div>
             </div>
           </div>
