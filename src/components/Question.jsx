@@ -43,6 +43,8 @@ const Question = ({ clashDisplay, roboto }) => {
             <h1
               className="text-[48px] font-semibold leading-[57.6px] max-w-[415px] text-white"
               style={clashDisplay}
+              data-aos="fade-right"
+              data-aos-duration="900"
             >
               Your questions, answered.
             </h1>
@@ -50,6 +52,8 @@ const Question = ({ clashDisplay, roboto }) => {
             <div className="space-y-3">
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-left"
+                data-aos-duration="900"
                 className="h-[72px] lg:w-[400px] xl:w-[732px] flex justify-between items-center"
               >
                 <h2
@@ -75,6 +79,8 @@ const Question = ({ clashDisplay, roboto }) => {
 
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-left"
+                data-aos-duration="900"
                 className="h-[72px] lg:w-[400px] xl:w-[732px] flex justify-between items-center"
               >
                 <h2
@@ -100,6 +106,8 @@ const Question = ({ clashDisplay, roboto }) => {
 
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-left"
+                data-aos-duration="900"
                 className="h-[72px] lg:w-[400px] xl:w-[732px] flex justify-between items-center"
               >
                 <h2
@@ -125,6 +133,8 @@ const Question = ({ clashDisplay, roboto }) => {
 
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-left"
+                data-aos-duration="900"
                 className="h-[72px] lg:w-[400px] xl:w-[732px] flex justify-between items-center"
               >
                 <h2
@@ -150,6 +160,8 @@ const Question = ({ clashDisplay, roboto }) => {
 
               <div
                 style={{ border: "1px solid #E2E2E2", padding: "20px 24px" }}
+                data-aos="fade-left"
+                data-aos-duration="900"
                 className="h-[72px] lg:w-[400px] xl:w-[732px] flex justify-between items-center"
               >
                 <h2

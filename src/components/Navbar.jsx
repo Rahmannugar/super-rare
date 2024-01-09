@@ -2,15 +2,26 @@ import { useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { IconButton } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Navbar = ({ roboto, spaceGrotesk, isMenuOpen, setIsMenuOpen }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <nav className="border-b-[1px] border-solid text-white border-gray-800 bg-black">
       {isNonMobileScreens ? (
         <div className="flex justify-between lg:px-[50px] xl:px-[70px] py-[29px]">
-          <div style={spaceGrotesk} className="flex space-x-7 leading-6">
+          <div
+            style={spaceGrotesk}
+            className="flex space-x-7 leading-6"
+            data-aos="fade-right"
+            data-aos-duration="500"
+          >
             <h1 className="hover:text-purple-900 duration-200">Roadmap</h1>
             <h1 className="hover:text-purple-900 duration-200">Team</h1>
             <h1 className="hover:text-purple-900 duration-200">About</h1>
@@ -37,12 +48,21 @@ const Navbar = ({ roboto, spaceGrotesk, isMenuOpen, setIsMenuOpen }) => {
           </div>
 
           <div>
-            <h1 style={spaceGrotesk} className="font-bold text-2xl leading-9">
+            <h1
+              style={spaceGrotesk}
+              className="font-bold text-2xl leading-9"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               SuperRare
             </h1>
           </div>
 
-          <div className="flex space-x-7">
+          <div
+            className="flex space-x-7"
+            data-aos-duration="500"
+            data-aos="fade-left"
+          >
             <button
               style={roboto}
               className="leading-6 hover:bg-white hover:text-black duration-200 px-[50px] py-[12px] rounded-full border border-solid border-white"
@@ -69,6 +89,8 @@ const Navbar = ({ roboto, spaceGrotesk, isMenuOpen, setIsMenuOpen }) => {
             <div>
               <button
                 style={roboto}
+                data-aos="fade-down"
+                data-aos-duration="500"
                 className=" hover:bg-white hover:text-black duration-200 px-3 py-1 sm:px-6 sm:py-3 rounded-full border border-solid border-white"
               >
                 Connect Wallet

@@ -109,12 +109,14 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
             <div className="flex space-x-6 py-20">
               <button
                 style={roboto}
+                data-aos="fade-down"
                 className="px-[28px] py-[12px] bg-white text-black rounded-[100px] hover:bg-green-300 duration-300"
               >
                 Join Discord
               </button>
               <button
                 style={roboto}
+                data-aos="fade-up"
                 className="px-[24px] py-[12px] rounded-[100px] text-white border hover:border-none hover:bg-white hover:text-black duration-300"
               >
                 Follow on Twitter
@@ -125,16 +127,22 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
               <img
                 src={Footer1}
                 alt="footer-1"
+                data-aos="fade-down"
+                data-aos-duration="900"
                 className="lg:w-[200px] lg:h-[200px] xl:w-[280px] xl:h-[280px] flex-shrink-0"
               />
               <img
                 src={Footer2}
                 alt="footer-2"
+                data-aos="fade-up"
+                data-aos-duration="900"
                 className="lg:w-[300px] lg:h-[300px] xl:w-[380.89px] xl:h-[380px] flex-shrink-0 mt-[-100px]"
               />
               <img
                 src={Footer3}
                 alt="footer-3"
+                data-aos="fade-down"
+                data-aos-duration="900"
                 className="lg:w-[200px] lg:h-[200px] xl:w-[ 279.346px] xl:h-[280px] flex-shrink-0"
               />
             </div>

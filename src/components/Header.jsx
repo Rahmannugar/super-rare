@@ -37,6 +37,7 @@ const Header = ({ roboto, clashDisplay }) => {
           <div className="w-[460px] absolute h-[460px] bg-gradient-to-b from-green-500 via-fuchsia-500 to-violet-700 rounded-full blur-3xl opacity-50" />
           <h1
             className="text-[52px] font-semibold max-w-[700px] mx-auto"
+            data-aos="zoom-in"
             style={clashDisplay}
           >
             Discover and collect super rare NFTs
@@ -53,6 +54,8 @@ const Header = ({ roboto, clashDisplay }) => {
             <img
               src={Spline1}
               alt="spline-1"
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="absolute top-0 right-32 w-[83.232px] h-[100px] mt-[-100px]"
             />
           </div>
@@ -61,6 +64,8 @@ const Header = ({ roboto, clashDisplay }) => {
             <img
               src={Spline2}
               alt="spline-2"
+              data-aos="fade-right"
+              data-aos-duration="700"
               className="w-[83.014px] h-[100px] lg:ml-16 xl:ml-24 2xl:ml-36 absolute"
             />
 
@@ -71,31 +76,43 @@ const Header = ({ roboto, clashDisplay }) => {
               <img
                 src={nft1}
                 alt="nft-1"
+                data-aos="fade-right"
+                data-aos-duration="700"
                 className="w-[180.422px] h-[180px] mx-auto my-4"
               />
               <img
                 src={nft2}
                 alt="nft-2"
+                data-aos="fade-down"
+                data-aos-duration="700"
                 className="w-[180px] h-[180px] mx-auto my-4"
               />
               <img
                 src={nft3}
                 alt="nft-3"
+                data-aos="fade-left"
+                data-aos-duration="700"
                 className="w-[180.422px] h-[180px] mx-auto my-4"
               />
               <img
                 src={nft4}
                 alt="nft-4"
+                data-aos="fade-right"
+                data-aos-duration="700"
                 className="w-[179.579px] h-[180px] mx-auto my-4"
               />
               <img
                 src={nft5}
                 alt="nft-5"
+                data-aos="fade-up"
+                data-aos-duration="700"
                 className="w-[180px] h-[180px] mx-auto my-4"
               />
               <img
                 src={nft6}
                 alt="nft-6"
+                data-aos="fade-left"
+                data-aos-duration="700"
                 className="w-[180px] h-[180px] mx-auto my-4"
               />
             </div>

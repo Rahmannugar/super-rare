@@ -89,6 +89,7 @@ const Article = ({ roboto, clashDisplay }) => {
                 src={Spline3}
                 alt="spline-3"
                 className="object-cover w-[229.794px] mt-20 h-[234.118px]"
+                data-aos="fade-left"
               />
             </div>
             <div
@@ -97,7 +98,11 @@ const Article = ({ roboto, clashDisplay }) => {
             ></div>
             <div className="flex justify-between space-x-9 2xl:justify-center">
               <div className="flex flex-col w-[604px] h-[736px] bg-gradient-to-b  from-transparent to-indigo-600  bg-orange-400 bg-opacity-20 border border-orange-400 border-opacity-60">
-                <div className="lg:px-5">
+                <div
+                  className="lg:px-5"
+                  data-aos="fade-down"
+                  data-aos-duration="700"
+                >
                   <h1
                     style={clashDisplay}
                     className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto py-16"
@@ -116,11 +121,17 @@ const Article = ({ roboto, clashDisplay }) => {
                   src={Article1}
                   alt="article-1"
                   className="w-[604px] h-[418px] mt-[56.5px] object-cover"
+                  data-aos="fade-up"
+                  data-aos-duration="700"
                 />
               </div>
 
               <div className="flex flex-col w-[604px] h-[736px] bg-green-500 border-green-500 border border-opacity-30 bg-opacity-20">
-                <div className="lg:px-5">
+                <div
+                  className="lg:px-5"
+                  data-aos="fade-down"
+                  data-aos-duration="700"
+                >
                   <h1
                     style={clashDisplay}
                     className="lg:text-3xl xl:text-[40px] font-medium leading-[48px] max-w-[510px] mx-auto py-16"
@@ -138,6 +149,8 @@ const Article = ({ roboto, clashDisplay }) => {
                   src={Article2}
                   alt="article-2"
                   className="w-[604px] h-[418px] mt-[80.5px] object-cover"
+                  data-aos="fade-up"
+                  data-aos-duration="700"
                 />
               </div>
             </div>
@@ -147,10 +160,17 @@ const Article = ({ roboto, clashDisplay }) => {
                 <h1
                   style={clashDisplay}
                   className="max-w-[520px] lg:text-3xl xl:text-[40px] font-medium leading-[48px]"
+                  data-aos="fade-right"
+                  data-aos-duration="700"
                 >
                   Our environmental impact matters to us.
                 </h1>
-                <p style={roboto} className="max-w-[533px] leading-6">
+                <p
+                  style={roboto}
+                  className="max-w-[533px] leading-6"
+                  data-aos="fade-right"
+                  data-aos-duration="700"
+                >
                   In order to enable our community to spend as little as
                   possible in gas fees when minting, we opted for a contract
                   made by Azuki called ERC721A, which allows minting multiple
@@ -160,6 +180,8 @@ const Article = ({ roboto, clashDisplay }) => {
               <img
                 src={Article3}
                 alt="article-3"
+                data-aos="fade-left"
+                data-aos-duration="700"
                 className="lg:w-[50%] 2xl:w-[620px] h-[640px] object-cover"
               />
             </div>
