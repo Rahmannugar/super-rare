@@ -38,6 +38,7 @@ const Header = ({ roboto, clashDisplay }) => {
           <h1
             className="text-[52px] font-semibold max-w-[700px] mx-auto"
             data-aos="zoom-in"
+            data-aos-once="true"
             style={clashDisplay}
           >
             Discover and collect super rare NFTs
@@ -55,6 +56,7 @@ const Header = ({ roboto, clashDisplay }) => {
               src={Spline1}
               alt="spline-1"
               data-aos="fade-left"
+              data-aos-once="true"
               data-aos-duration="700"
               className="absolute top-0 right-32 w-[83.232px] h-[100px] mt-[-100px]"
             />
@@ -65,6 +67,7 @@ const Header = ({ roboto, clashDisplay }) => {
               src={Spline2}
               alt="spline-2"
               data-aos="fade-right"
+              data-aos-once="true"
               data-aos-duration="700"
               className="w-[83.014px] h-[100px] lg:ml-16 xl:ml-24 2xl:ml-36 absolute"
             />
@@ -77,6 +80,7 @@ const Header = ({ roboto, clashDisplay }) => {
                 src={nft1}
                 alt="nft-1"
                 data-aos="fade-right"
+                data-aos-once="true"
                 data-aos-duration="700"
                 className="w-[180.422px] h-[180px] mx-auto my-4"
               />
@@ -84,6 +88,7 @@ const Header = ({ roboto, clashDisplay }) => {
                 src={nft2}
                 alt="nft-2"
                 data-aos="fade-down"
+                data-aos-once="true"
                 data-aos-duration="700"
                 className="w-[180px] h-[180px] mx-auto my-4"
               />
@@ -91,6 +96,7 @@ const Header = ({ roboto, clashDisplay }) => {
                 src={nft3}
                 alt="nft-3"
                 data-aos="fade-left"
+                data-aos-once="true"
                 data-aos-duration="700"
                 className="w-[180.422px] h-[180px] mx-auto my-4"
               />
@@ -98,6 +104,7 @@ const Header = ({ roboto, clashDisplay }) => {
                 src={nft4}
                 alt="nft-4"
                 data-aos="fade-right"
+                data-aos-once="true"
                 data-aos-duration="700"
                 className="w-[179.579px] h-[180px] mx-auto my-4"
               />
@@ -105,6 +112,7 @@ const Header = ({ roboto, clashDisplay }) => {
                 src={nft5}
                 alt="nft-5"
                 data-aos="fade-up"
+                data-aos-once="true"
                 data-aos-duration="700"
                 className="w-[180px] h-[180px] mx-auto my-4"
               />
@@ -112,6 +120,7 @@ const Header = ({ roboto, clashDisplay }) => {
                 src={nft6}
                 alt="nft-6"
                 data-aos="fade-left"
+                data-aos-once="true"
                 data-aos-duration="700"
                 className="w-[180px] h-[180px] mx-auto my-4"
               />
