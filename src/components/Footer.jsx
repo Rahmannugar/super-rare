@@ -24,9 +24,8 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
     background:
       "linear-gradient(268deg, rgba(36, 255, 0, 0.31) 25.54%, rgba(10, 207, 131, 0.50) 43.2%, rgba(89, 75, 242, 0.50) 74.96%)",
     filter: "blur(200px)",
-    width: "690px",
-    height: "568px",
-    transform: "rotate(-34.572deg)",
+    width: "518px",
+    height: "426px",
   };
 
   const bottomRightStyle = {
@@ -35,15 +34,45 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
     background:
       "linear-gradient(0deg, rgba(255, 245, 0, 0.50) 0%, rgba(255, 245, 0, 0.50) 100%)",
     filter: "blur(200px)",
-    width: "604px",
-    height: "497px",
+    width: "518px",
+    height: "126px",
+  };
+
+  const mobileBottomLeftStyle = {
+    borderRadius: "518px",
+    opacity: "0.5",
+    background:
+      "linear-gradient(269deg, rgba(98, 73, 255, 0.50) 30.86%, rgba(36, 255, 0, 0.50) 89.17%)",
+    filter: "blur(200px)",
+    width: "318px",
+    height: "426px",
+  };
+
+  const mobileTopRightStyle = {
+    borderRadius: "690px",
+    opacity: "0.5",
+    background:
+      "linear-gradient(268deg, rgba(36, 255, 0, 0.31) 25.54%, rgba(10, 207, 131, 0.50) 43.2%, rgba(89, 75, 242, 0.50) 74.96%)",
+    filter: "blur(200px)",
+    width: "318px",
+    height: "426px",
+  };
+
+  const mobileBottomRightStyle = {
+    borderRadius: "604px",
+    opacity: "0.5",
+    background:
+      "linear-gradient(0deg, rgba(255, 245, 0, 0.50) 0%, rgba(255, 245, 0, 0.50) 100%)",
+    filter: "blur(200px)",
+    width: "318px",
+    height: "126px",
   };
   return (
     <div>
       {isNonMobileScreens ? (
         <div>
-          <div className="bg-[#131415] relative lg:px-[50px] xl:px-[70px] 2xl:[px-100px] py-32">
-            {/* <div
+          <div className="bg-[#131415] relative lg:px-[50px] xl:px-[70px] 2xl:[px-100px] pt-32">
+            <div
               style={bottomLeftStyle}
               className="absolute bottom-0 left-0"
             ></div>
@@ -51,7 +80,7 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
             <div
               style={bottomRightStyle}
               className="absolute bottom-0 right-0"
-            ></div> */}
+            ></div>
 
             <div className="text-white space-y-5">
               <h1
@@ -165,7 +194,127 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
           </div>
         </div>
       ) : (
-        <div></div>
+        <div>
+          <div className="bg-[#131415] relative pt-20 px-10">
+            <div
+              style={mobileBottomLeftStyle}
+              className="absolute bottom-0 left-0"
+            ></div>
+            <div
+              style={mobileTopRightStyle}
+              className="absolute top-0 right-0"
+            ></div>
+            <div
+              style={mobileBottomRightStyle}
+              className="absolute bottom-0 right-0"
+            ></div>
+
+            <div className="text-white flex flex-col items-center justify-center space-y-5">
+              <h1
+                className="font-semibold text-xl sm:text-2xl"
+                style={clashDisplay}
+              >
+                Join the community
+              </h1>
+              <p style={roboto}>
+                Join our Discord channel or follow us on Twitter keep up to date
+                with our latest work and announcements.
+              </p>
+            </div>
+
+            <div className="flex space-x-6 items-center justify-center py-6">
+              <button
+                style={roboto}
+                className="px-[20px] py-[10px] flex-shrink-0 bg-white text-black rounded-[100px] hover:bg-green-300 duration-300"
+              >
+                Join Discord
+              </button>
+              <button
+                style={roboto}
+                className="px-[20px] py-[10px] rounded-[100px] flex-shrink-0 text-white border hover:border-none hover:bg-white hover:text-black duration-300"
+              >
+                Follow on Twitter
+              </button>
+            </div>
+
+            <div className="flex space-x-[-70px] mt-20 justify-center items-center">
+              <img
+                src={Footer1}
+                alt="footer-1"
+                className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] flex-shrink-0"
+              />
+              <img
+                src={Footer2}
+                alt="footer-2"
+                className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] flex-shrink-0 mt-[-50px]"
+              />
+              <img
+                src={Footer3}
+                alt="footer-3"
+                className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] flex-shrink-0"
+              />
+            </div>
+          </div>
+
+          <div className="bg-[#111] pt-16 px-10 pb-28">
+            <div>
+              <h1
+                className=" text-xl sm:text-2xl font-bold text-white text-center"
+                style={spaceGrotesk}
+              >
+                SuperRare
+              </h1>
+              <div
+                className="flex justify-center items-center space-x-5 mt-5"
+                style={{
+                  color: "rgba(255, 255, 255, 0.5)",
+                }}
+              >
+                <h2 className="font-semibold" style={roboto}>
+                  Roadmap
+                </h2>
+                <h2 className="font-semibold" style={roboto}>
+                  Team
+                </h2>
+                <h2 className="font-semibold" style={roboto}>
+                  About
+                </h2>
+                <h2 className="font-semibold" style={roboto}>
+                  Wallet
+                </h2>
+                <h2 className="font-semibold" style={roboto}>
+                  Buy
+                </h2>
+              </div>
+
+              <div
+                style={{
+                  background: "rgba(171, 171, 171, 0.50)",
+                }}
+                className="h-[1px] mt-16"
+              ></div>
+
+              <div
+                style={roboto}
+                className="text-[#ABABAB] mt-5 flex justify-between space-x-3 text-xs"
+              >
+                <h1>{year} Superare. All right reserved.</h1>
+
+                <div className="flex justify-end items-end space-x-4">
+                  <a href="/" className="underline">
+                    Privacy Policy
+                  </a>
+                  <a href="/" className="underline">
+                    Terms of Service
+                  </a>
+                  <a href="/" className="underline">
+                    Cookies Settings
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
