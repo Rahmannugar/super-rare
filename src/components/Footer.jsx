@@ -19,11 +19,19 @@ const Footer = ({ clashDisplay, roboto }) => {
             </p>
           </div>
 
-          <div className="flex">
-            <button className="px-[28px] py-[12px] bg-white text-black rounded-[100px]">
+          <div className="flex space-x-6 py-24">
+            <button
+              style={roboto}
+              className="px-[28px] py-[12px] bg-white text-black rounded-[100px]"
+            >
               Join Discord
             </button>
-            <button className="px-[]">Follow on Twitter</button>
+            <button
+              style={roboto}
+              className="px-[24px] py-[12px] rounded-[100px] text-white border"
+            >
+              Follow on Twitter
+            </button>
           </div>
         </div>
       ) : (
