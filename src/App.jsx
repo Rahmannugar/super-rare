@@ -33,7 +33,11 @@ const App = () => {
           <Article roboto={roboto} clashDisplay={clashDisplay} />
           <Favorite clashDisplay={clashDisplay} />
           <Question roboto={roboto} clashDisplay={clashDisplay} />
-          <Footer roboto={roboto} clashDisplay={clashDisplay} />
+          <Footer
+            roboto={roboto}
+            clashDisplay={clashDisplay}
+            spaceGrotesk={spaceGrotesk}
+          />
         </div>
       )}
     </div>
