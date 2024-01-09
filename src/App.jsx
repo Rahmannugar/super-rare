@@ -104,7 +104,7 @@ const App = () => {
         </div>
       ) : (
         <div className="flex justify-center items-center w-full h-screen">
-          <HashLoader color="white" />
+          <HashLoader color="white" />jkcfjhfhffff
         </div>
       )}
     </div>
