@@ -43,7 +43,7 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
       {isNonMobileScreens ? (
         <div>
           <div className="bg-[#131415] relative lg:px-[50px] xl:px-[70px] 2xl:[px-100px] py-32">
-            <div
+            {/* <div
               style={bottomLeftStyle}
               className="absolute bottom-0 left-0"
             ></div>
@@ -51,7 +51,7 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
             <div
               style={bottomRightStyle}
               className="absolute bottom-0 right-0"
-            ></div>
+            ></div> */}
 
             <div className="text-white space-y-5">
               <h1

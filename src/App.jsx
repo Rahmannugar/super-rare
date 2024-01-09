@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Partners from "./components/Partners";
-import Article from "./components/Article";
-import Favorite from "./components/Favorite";
-import Question from "./components/Question";
-import Footer from "./components/Footer";
+const Header = lazy(() => import("./components/Header"));
+const Partners = lazy(() => import("./components/Partners"));
+const Article = lazy(() => import("./components/Article"));
+const Favorite = lazy(() => import("./components/Favorite"));
+const Question = lazy(() => import("./components/Question"));
+const Footer = lazy(() => import("./components/Footer"));
+
 const App = () => {
   const spaceGrotesk = {
     fontFamily: "'Space Grotesk', serif",
@@ -28,16 +29,20 @@ const App = () => {
       />
       {!isMenuOpen && (
         <div>
-          <Header roboto={roboto} clashDisplay={clashDisplay} />
-          <Partners roboto={roboto} />
-          <Article roboto={roboto} clashDisplay={clashDisplay} />
-          <Favorite clashDisplay={clashDisplay} />
-          <Question roboto={roboto} clashDisplay={clashDisplay} />
-          <Footer
-            roboto={roboto}
-            clashDisplay={clashDisplay}
-            spaceGrotesk={spaceGrotesk}
-          />
+          <Suspense
+            fallback={<div className="bg-black text-black">Loading...</div>}
+          >
+            <Header roboto={roboto} clashDisplay={clashDisplay} />
+            <Partners roboto={roboto} />
+            <Article roboto={roboto} clashDisplay={clashDisplay} />
+            <Favorite clashDisplay={clashDisplay} />
+            <Question roboto={roboto} clashDisplay={clashDisplay} />
+            <Footer
+              roboto={roboto}
+              clashDisplay={clashDisplay}
+              spaceGrotesk={spaceGrotesk}
+            />
+          </Suspense>
         </div>
       )}
     </div>
