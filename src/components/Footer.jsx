@@ -62,7 +62,19 @@ const Footer = ({ clashDisplay, roboto, spaceGrotesk }) => {
 
           <div className="bg-[#111] lg:pt-48 xl:pt-72">
             <div>
-              <h1>SuperRare</h1>
+              <h1
+                className="leading-9 text-2xl font-bold text-white text-center"
+                style={spaceGrotesk}
+              >
+                SuperRare
+              </h1>
+              <div>
+                <h2>Roadmap</h2>
+                <h2>Team</h2>
+                <h2>About</h2>
+                <h2>Wallet</h2>
+                <h2>Buy</h2>
+              </div>
             </div>
           </div>
         </div>
